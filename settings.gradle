@@ -1,0 +1,4 @@
+include ':playgroundJ'
+include ':playgroundK'
+include ':app'
+rootProject.name = "Playground"
