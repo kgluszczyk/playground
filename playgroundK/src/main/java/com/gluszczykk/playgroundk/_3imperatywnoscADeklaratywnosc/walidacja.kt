@@ -29,3 +29,13 @@ fun List<Input>.waliduj(): List<ValidationError> {
     }
     return result3
 }
+
+private fun List<Input>.validateMandatoryFields(): List<ValidationError> =
+    filter { it.mandatory }
+        .filter {
+            when (it) {
+                is InputCheckbox, is Toggle -> it.value?.fromApiBoolean() != true
+                else -> it.value.isNullOrBlank()
+            }
+        }
+        .map { ValidationError(it.id, "Required") }

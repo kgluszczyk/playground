@@ -20,6 +20,26 @@ import java.lang.IllegalArgumentException
  *
  */
 
-fun main() {
+const val pojemnosc = 1000
 
+fun main() {
+    val listaWlascicieli = listOf( Wlasciciel("Elżbieta"),  Wlasciciel("Bartosz"))
+
+    //imperatywnie
+    val listaWlascicieliLiteraI = mutableListOf<Wlasciciel>()
+    for (wlasciciel in listaWlascicieli){
+        if(wlasciciel.imie.contains("e", ignoreCase = true)){
+            listaWlascicieliLiteraI.add(wlasciciel)
+        }
+    }
+    println(listaWlascicieliLiteraI)
+
+    //deklaratywnie
+    listaWlascicieli.filter { wlasciciel ->
+        wlasciciel.imie.contains("e", ignoreCase = true)
+    }.also {
+        println(it)
+    }
 }
+
+data class Wlasciciel(val imie: String, val nazwisko: String = "Bednarz")
