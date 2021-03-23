@@ -4,13 +4,9 @@ import java.lang.IllegalArgumentException
 
 /** Zadanie 1
  *
- * Utwórz schronisko dla zwierząt, prowadzone prez małżeństwo Bartosza i Elżbiety Bednarzy
- * schronisko składa się z ponumerowanych klatek, gdzie:
- * klatki od 0 do 9 przeznaczone są dla małych zwierząt
- * klatki od 10 do 99 przeznaczone są dla zwierząt średnich
- * klatki od 100 do 1000 przeznaczone są dla zwierząt dużych
+ * Wstep:1 Utwórz schronisko dla zwierząt, prowadzone prez małżeństwo Bartosza i Elżbiety Bednarzy
  *
- * Jak widać, maksymalna pojemność schroniska to 1000
+ * Wstep:1 Mmaksymalna pojemność schroniska to 1000
  *
  * Schronisko przyjumuje 2 typy zwierząt, Psy i Koty
  *
