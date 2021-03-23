@@ -1,6 +1,4 @@
-package com.gluszczykk.playgroundk._3imperativeVsdeclarative
-
-import java.math.BigDecimal
+package com.gluszczykk.playgroundk._3imperatywnoscADeklaratywnosc
 
 /** Zadanie 2
  *
@@ -8,7 +6,7 @@ import java.math.BigDecimal
  *
  */
 
-fun List<Input>.validateMandatoryFields(): List<ValidationError> {
+fun List<Input>.waliduj(): List<ValidationError> {
     val result = mutableListOf<Input>()
     for (i in indices) {
         if (this[i].mandatory) {

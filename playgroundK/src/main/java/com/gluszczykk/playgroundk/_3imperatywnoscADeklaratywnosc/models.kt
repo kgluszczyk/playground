@@ -1,4 +1,4 @@
-package com.gluszczykk.playgroundk._3imperativeVsdeclarative
+package com.gluszczykk.playgroundk._3imperatywnoscADeklaratywnosc
 
 import java.math.BigDecimal
 

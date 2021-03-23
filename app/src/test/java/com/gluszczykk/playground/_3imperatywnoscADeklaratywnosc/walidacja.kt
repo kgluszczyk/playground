@@ -1,9 +1,9 @@
-package com.gluszczykk.playground
+package com.gluszczykk.playground._3imperatywnoscADeklaratywnosc
 
 import assertk.assertThat
 import assertk.assertions.isTrue
-import com.gluszczykk.playgroundk._3imperativeVsdeclarative.Input
-import com.gluszczykk.playgroundk._3imperativeVsdeclarative.validateMandatoryFields
+import com.gluszczykk.playgroundk._3imperatywnoscADeklaratywnosc.Input
+import com.gluszczykk.playgroundk._3imperatywnoscADeklaratywnosc.waliduj
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Test
@@ -13,7 +13,7 @@ import kotlin.random.Random
 class KotlinUnitTest {
 
     @Test
-    fun `no errors while value not empty`() {
+    fun `brak błędu gdy wartośći są puste`() {
         //given
         val inputs = (1..10).map {
             mockk<Input> {
@@ -24,7 +24,7 @@ class KotlinUnitTest {
             }
         }
         //when
-        val errors = inputs.validateMandatoryFields()
+        val errors = inputs.waliduj()
 
         //then
         assertThat(errors.isEmpty()).isTrue()
